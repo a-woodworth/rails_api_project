@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>My Weather Results</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <p class="lead">The current temperature at <%= @address %> is <%= @forecast_results["currently"]["temperature"] %> degrees.</p>
+
+      <p class="lead">The outlook for the next hour is: <%= @forecast_results["minutely"]["summary"] %></p>
+
+      <p class="lead">The outlook for the next day is: <%= @forecast_results["hourly"]["summary"] %></p></p>
+    </div>
+  </div>
+</div>
